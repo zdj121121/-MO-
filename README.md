@@ -6,17 +6,17 @@
 
 MO指令匹配算法示例
 
-seq	AccessNO	FeatureStr	ANCheckFlag	FSCheckFlag
+seq |	AccessNO |	FeatureStr |	ANCheckFlag |	FSCheckFlag
 
-1	      10628888	  xw	          1	          0
+1	   |   10628888	   |  xw	    |      1	   |      0
 
-2	      1062888801	xw	          0         	0
+2	   |   1062888801	 |  xw	    |      0     |    	0
 
-3	      1062888801	xw1	          0         	1
+3	   |   1062888801	 |  xw1	    |      0     |    	1
 
-4	      10628888	  01xw	        1         	1
+4	   |   10628888	   |  01xw	  |      1     |    	1
 
-5	      10628888	 (null)	        0	          0
+5	   |   10628888	   |  (null)	|      0	   |      0
 
 [备注]AccessNO表示MO的发送号码、FeatureStr表示指令内容、ANCheckFlag表示对AccessNO是否使用精确匹配（1代表精确匹配）、FSCheckFlag表示对指令内容是否使用精确匹配（0代表模糊匹配）。
 
