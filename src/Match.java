@@ -75,7 +75,7 @@ public class Match {
      **/
     public boolean matchBlur(String source, String target) {
         if (source.length() < target.length()) return false;
-        int max = source.length();
+        int max = source.length()-target.length();
         char first = target.charAt(0);
         int i = 0;
         while (i < max) {
@@ -87,7 +87,7 @@ public class Match {
                 int j = i + 1;
                 int end = i + target.length();
                 int k = 1;
-                while (j < end&&j<max && source.charAt(j) == target.charAt(k)) {//从第一个位置开始匹配到目标字符串末尾
+                while (j < end&& source.charAt(j) == target.charAt(k)) {//从第一个位置开始匹配到目标字符串末尾
                     j++;
                     k++;
                 }
