@@ -78,7 +78,7 @@ public class Match {
         int max = source.length()-target.length();
         char first = target.charAt(0);
         int i = 0;
-        while (i < max) {
+        while (i <= max) {
             if (source.charAt(i) != first)
                 while (i < max && source.charAt(i) != first) {//源字符串中寻找与目标字符串第一个匹配的位置
                 i++;
